@@ -9,55 +9,39 @@
 
 <body>
     <script>
-        // const numbersList = [1, 2, 3, 4, 5];
-        // for (var i = 0; i < numbersList.length; i++) {
-        //     var element = numbersList[i]
-        //     console.log(element)
-        // }
+        // Objetivo
+        // [1, 2, 3].forEach(item => console.log(item))
+
+        //  var resultado = [1, 2, 3].map((item) => item*2)
+
+        // console.log(resultado)
+
+        // var resultado2 = [1,2,3,4,5,6,7,8].filter(function ePar(item){
+        //     // if(item % 2 === 0){
+        //     //     return true
+        //     // }else{
+        //     //     return false
+        //     // }
 
 
-        // numbersList.forEach(element=>console.log(element))
+        //     return item % 2 === 0
+        // })
 
-        // exibirNumero(1)
+        // var resultado2 = [1,2,3,4,5,6,7,8].filter((item)=>item % 2 === 1)
+        // console.log(resultado2)
 
-        function exibirNumero(cabecaDeCachorro){
-            console.log(cabecaDeCachorro)
-        }
-
-    
-
-        const numbersList = [1, 2, 3, 'a'];
-        numbersList.forEach( chuchu => console.log(chuchu) )
-
-        // 1 passo colocar a funcao no foreach
-        numbersList.forEach(function exibirNumero(cabecaDeCachorro){
-            console.log(cabecaDeCachorro)
-        })
-
-        // 2 passo funcao anonima
-        numbersList.forEach(function (cabecaDeCachorro){
-            console.log(cabecaDeCachorro)
-        })
-
-        // 3 passo arrow function
-        numbersList.forEach((cabecaDeCachorro)=>{
-            console.log(cabecaDeCachorro)
-        })
-
-        // 4 passo tirei as chaves e coloquei na mesma linha
-        numbersList.forEach( (cabecaDeCachorro)=> console.log(cabecaDeCachorro) )
-
-        // 5 passo tirei os parenteses
-        numbersList.forEach(cabecaDeCachorro=>console.log(cabecaDeCachorro))
+        // var resultado3 = [1,2,3,4,5,6,7,8].find((item)=> item > 3 && item > 4)
+        // console.log(resultado3)
 
         
+        // var resultado4 = [1,2,3,4,5,6,7,8].filter((item)=> item > 3)
+        // console.log(resultado4)
 
-        //         exibirNumero(1)
-        //         exibirNumero('a')
+        // var resultado5 = [4,2,1,3].sort((a, b)=> a - b)
+        // console.log(resultado5)
 
-        // o foreach chama a funcao para cada elemento da lista, passando o elemento como parametro
-
-        // exibirNumero(1)
+        // console.log([4,2,1,3,8,1,2,3,1,2].sort((a,b)=> b - a).filter((item) => item > 2))
+        console.log([4,2,1,3].filter((item) => item > 2).map(item => item+1))
     </script>
 </body>
 
